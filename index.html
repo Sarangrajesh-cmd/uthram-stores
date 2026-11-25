@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Uthram Stores, your neighbourhood grocery store in Akkarapuram, Thrissur. Browse everyday essentials and order by WhatsApp.">
+  <meta name="theme-color" content="#1f6b45">
+  <title>Uthram Stores | Your Neighbourhood Grocery Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topline">Everyday essentials, close to home <span>•</span> Delivery available within 3 km</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Uthram Stores home">
+      <span class="brand-mark">U</span>
+      <span><strong>UTHRAM STORES</strong><small>Your neighbourhood grocery store</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a>
+      <a class="nav-order" href="https://wa.me/917994773912?text=Hello%20Uthram%20Stores%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener">Order on WhatsApp ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> LOCAL • CONVENIENT • EVERYDAY</div>
+        <h1>Your daily essentials,<br><em>just around the corner.</em></h1>
+        <p>From Kerala Matta rice and fresh bananas to Milma milk and everyday groceries — find what you need at Uthram Stores.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#products">Explore products <span>→</span></a>
+          <a class="btn btn-light" href="https://wa.me/917994773912?text=Hello%20Uthram%20Stores%2C%20please%20share%20today%27s%20availability." target="_blank" rel="noopener">Check today's stock</a>
+        </div>
+        <div class="hero-note"><span class="dot"></span> Monday–Saturday, 9:00 AM–9:00 PM</div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo"><img src="assets/kerala-matta-rice.jpg" alt="Kerala Matta rice"></div>
+        <div class="floating-card"><span class="mini-icon">🥛</span><span><b>Daily essentials</b><small>Convenient local shopping</small></span></div>
+        <div class="hero-stamp">THRISSUR<br><b>KERALA</b></div>
+      </div>
+    </section>
+
+    <section class="quick-facts" aria-label="Store highlights">
+      <div><span class="fact-icon">📍</span><span><b>Easy to find</b><small>Akkarapuram, Thrissur</small></span></div>
+      <div><span class="fact-icon">🛵</span><span><b>Local delivery</b><small>Within 3 km</small></span></div>
+      <div><span class="fact-icon">💬</span><span><b>Quick ordering</b><small>Call or WhatsApp</small></span></div>
+    </section>
+
+    <section class="section products-section" id="products">
+      <div class="section-heading">
+        <div><div class="eyebrow">WHAT YOU'LL FIND HERE</div><h2>Shop everyday favourites</h2></div>
+        <p>Browse our product range and message us to confirm today's price and availability.</p>
+      </div>
+      <div class="product-tools">
+        <div class="filters" id="filters" role="group" aria-label="Filter products">
+          <button class="filter active" data-filter="all">All items</button>
+          <button class="filter" data-filter="staples">Staples</button>
+          <button class="filter" data-filter="dairy">Dairy & Bakery</button>
+          <button class="filter" data-filter="fresh">Fresh produce</button>
+          <button class="filter" data-filter="snacks">Snacks & Drinks</button>
+        </div>
+        <label class="search-box"><span>⌕</span><input id="productSearch" type="search" placeholder="Search products..." aria-label="Search products"></label>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="staples" data-name="Kerala Matta rice red rice">
+          <div class="product-image"><img src="assets/kerala-matta-rice.jpg" alt="Kerala Matta rice" loading="lazy"><span class="category-tag">Staples</span></div>
+          <div class="product-info"><h3>Kerala Matta Rice</h3><p>Traditional Kerala red rice</p><button class="add-order" data-product="Kerala Matta Rice">Add to order <span>＋</span></button></div>
+        </article>
+        <article class="product-card" data-category="staples" data-name="Coconut oil">
+          <div class="product-image"><img src="assets/coconut-oil.jpg" alt="Coconut oil" loading="lazy"><span class="category-tag">Staples</span></div>
+          <div class="product-info"><h3>Coconut Oil</h3><p>Everyday cooking essential</p><button class="add-order" data-product="Coconut Oil">Add to order <span>＋</span></button></div>
+        </article>
+        <article class="product-card" data-category="staples" data-name="Sunflower oil">
+          <div class="product-image"><img src="assets/sunflower-oil.jpg" alt="Sunflower oil" loading="lazy"><span class="category-tag">Staples</span></div>
+          <div class="product-info"><h3>Sunflower Oil</h3><p>Cooking oil</p><button class="add-order" data-product="Sunflower Oil">Add to order <span>＋</span></button></div>
+        </article>
+        <article class="product-card" data-category="staples" data-name="Green gram cherupayar">
+          <div class="product-image"><img src="assets/green-gram-cherupayar.jpg" alt="Green gram" loading="lazy"><span class="category-tag">Staples</span></div>
+          <div class="product-info"><h3>Green Gram</h3><p>Cherupayar</p><button class="add-order" data-product="Green Gram (Cherupayar)">Add to order <span>＋</span></button></div>
+        </article>
+        <article class="product-card" data-category="staples" data-name="Chickpeas kadala">
+          <div class="product-image"><img src="assets/chickpeas-kadala.jpg" alt="Chickpeas" loading="lazy"><span class="category-tag">Staples</span></div>
+          <div class="product-info"><h3>Chickpeas</h3><p>Kadala</p><button class="add-order" data-product="Chickpeas (Kadala)">Add to order <span>＋</span></button></div>
+        </article>
+        <article class="product-card" data-category="dairy" data-name="Milma milk">
+          <div class="product-image"><img src="assets/milma-milk.jpg" alt="Milma milk packets" loading="lazy"><span class="category-tag">Dairy</span></div>
+          <div class="product-info"><h3>Milma Milk</h3><p>Fresh milk packets</p><button class="add-order" data-product="Milma Milk">Add to order <span>＋</span></button></div>
+        </article>
+        <article class="product-card" data-category="dairy" data-name="Buttermilk">
+          <div class="product-image"><img src="assets/buttermilk.jpg" alt="Buttermilk" loading="lazy"><span class="category-tag">Dairy</span></div>
+          <div class="product-info"><h3>Buttermilk</h3><p>Chilled refreshment</p><button class="add-order" data-product="Buttermilk">Add to order <span>＋</span></button></div>
+        </article>
+        <article class="product-card" data-category="dairy" data-name="Ghee">
+          <div class="product-image"><img src="assets/ghee.jpg" alt="Ghee" loading="lazy"><span class="category-tag">Dairy</span></div>
+          <div class="product-info"><h3>Ghee</h3><p>Kitchen essential</p><button class="add-order" data-product="Ghee">Add to order <span>＋</span></button></div>
+        </article>
+        <article class="product-card" data-category="dairy" data-name="Bread sliced bread bakery">
+          <div class="product-image"><img src="assets/bread.jpg" alt="Sliced bread" loading="lazy"><span class="category-tag">Bakery</span></div>
+          <div class="product-info"><h3>Sliced Bread</h3><p>For breakfast and snacks</p><button class="add-order" data-product="Sliced Bread">Add to order <span>＋</span></button></div>
+        </article>
+        <article class="product-card" data-category="dairy" data-name="Eggs">
+          <div class="product-image"><img src="assets/eggs.jpg" alt="Eggs" loading="lazy"><span class="category-tag">Bakery</span></div>
+          <div class="product-info"><h3>Eggs</h3><p>Everyday protein</p><button class="add-order" data-product="Eggs">Add to order <span>＋</span></button></div>
+        </article>
+        <article class="product-card" data-category="fresh" data-name="Nendran banana">
+          <div class="product-image"><img src="assets/nendran-banana.jpg" alt="Nendran bananas" loading="lazy"><span class="category-tag">Fresh</span></div>
+          <div class="product-info"><h3>Nendran Banana</h3><p>Local banana variety</p><button class="add-order" data-product="Nendran Banana">Add to order <span>＋</span></button></div>
+        </article>
+        <article class="product-card" data-category="fresh" data-name="Palayankodan banana">
+          <div class="product-image"><img src="assets/palayankodan-banana.jpg" alt="Palayankodan bananas" loading="lazy"><span class="category-tag">Fresh</span></div>
+          <div class="product-info"><h3>Palayankodan Banana</h3><p>Local banana variety</p><button class="add-order" data-product="Palayankodan Banana">Add to order <span>＋</span></button></div>
+        </article>
+        <article class="product-card" data-category="snacks" data-name="Banana chips">
+          <div class="product-image"><img src="assets/banana-chips.jpg" alt="Banana chips" loading="lazy"><span class="category-tag">Snacks</span></div>
+          <div class="product-info"><h3>Banana Chips</h3><p>A Kerala snack favourite</p><button class="add-order" data-product="Banana Chips">Add to order <span>＋</span></button></div>
+        </article>
+        <article class="product-card" data-category="snacks" data-name="Instant noodles">
+          <div class="product-image"><img src="assets/instant-noodles.jpg" alt="Instant noodles" loading="lazy"><span class="category-tag">Quick bites</span></div>
+          <div class="product-info"><h3>Instant Noodles</h3><p>Quick and easy snack</p><button class="add-order" data-product="Instant Noodles">Add to order <span>＋</span></button></div>
+        </article>
+        <article class="product-card" data-category="snacks" data-name="Bottled water">
+          <div class="product-image"><img src="assets/bottled-water.jpg" alt="Bottled water" loading="lazy"><span class="category-tag">Drinks</span></div>
+          <div class="product-info"><h3>Bottled Water</h3><p>Packaged drinking water</p><button class="add-order" data-product="Bottled Water">Add to order <span>＋</span></button></div>
+        </article>
+      </div>
+      <div class="no-results" id="noResults" hidden>No products match your search. Try another name or category.</div>
+      <div class="catalogue-note">Product prices and same-day stock can change. Please WhatsApp or call us to confirm before visiting or placing an order.</div>
+    </section>
+
+    <section class="order-banner">
+      <div><div class="eyebrow">SIMPLE, PERSONAL ORDERING</div><h2>Your grocery list.<br><em>One WhatsApp message.</em></h2><p>Send us your list, ask about availability or share a photo of your handwritten shopping list directly on WhatsApp.</p></div>
+      <a class="btn btn-white" href="https://wa.me/917994773912?text=Hello%20Uthram%20Stores%2C%20I%20would%20like%20to%20place%20a%20grocery%20order." target="_blank" rel="noopener">Message the store ↗</a>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-image"><img src="assets/nendran-banana.jpg" alt="Fresh local bananas" loading="lazy"><div class="image-caption">A neighbourhood store in Thrissur</div></div>
+      <div class="about-copy"><div class="eyebrow">A LITTLE ABOUT US</div><h2>Local shopping,<br><em>made convenient.</em></h2><p>Uthram Stores is a neighbourhood convenience store at Meghamalhar Complex, Akkarapuram, Thrissur. The store offers everyday groceries, Kerala staples, dairy products, bakery essentials, local bananas and popular snacks.</p><p>Our website makes it easier for nearby residents to find the store, check basic details and contact the shop for current stock and quick orders.</p><a class="text-link" href="#contact">Find our store <span>→</span></a></div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading"><div><div class="eyebrow">VISIT OR GET IN TOUCH</div><h2>We're nearby.</h2></div><p>Need to check an item or arrange a local delivery? Contact the store directly.</p></div>
+      <div class="contact-grid">
+        <div class="contact-details">
+          <div class="contact-item"><span>📍</span><div><small>STORE ADDRESS</small><b>Meghamalhar Complex, Akkarapuram, Thrissur, Kerala</b></div></div>
+          <div class="contact-item"><span>🕘</span><div><small>OPENING HOURS</small><b>Monday–Saturday: 9:00 AM–9:00 PM</b><b>Sunday: Closed</b></div></div>
+          <div class="contact-item"><span>🛵</span><div><small>LOCAL DELIVERY</small><b>Delivery available within 3 km</b><small>Please confirm delivery availability and charges.</small></div></div>
+          <div class="contact-item"><span>☎</span><div><small>PHONE / WHATSAPP</small><b>+91 79947 73912</b></div></div>
+          <div class="contact-actions"><a class="btn btn-primary" href="tel:+917994773912">Call the store</a><a class="btn btn-outline" href="https://wa.me/917994773912" target="_blank" rel="noopener">WhatsApp</a></div>
+          <p class="email-line">Email: <a href="mailto:Rajesh.Worley@gmail.com">Rajesh.Worley@gmail.com</a></p>
+        </div>
+        <div class="map-card"><div class="map-placeholder"><span>📍</span><b>Uthram Stores</b><small>Meghamalhar Complex, Akkarapuram</small></div><a class="map-link" href="https://maps.app.goo.gl/VXgW8svVBw4rVD5e8" target="_blank" rel="noopener">Open directions in Google Maps ↗</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="footer-brand" href="#home">UTHRAM STORES</a><span>Your neighbourhood grocery store · Thrissur, Kerala</span><span>© <span id="year"></span> Uthram Stores</span></footer>
+
+  <a class="floating-wa" href="https://wa.me/917994773912?text=Hello%20Uthram%20Stores%2C%20I%20have%20a%20query." target="_blank" rel="noopener" aria-label="Chat with Uthram Stores on WhatsApp">☏ <span>Chat with us</span></a>
+  <div class="order-dock" id="orderDock" hidden><span><b id="orderCount">0</b> item(s) selected</span><button id="sendOrder">Send list on WhatsApp ↗</button><button class="clear-order" id="clearOrder" aria-label="Clear order list">×</button></div>
+  <script src="script.js"></script>
+</body>
+</html>
